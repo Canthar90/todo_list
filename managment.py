@@ -6,7 +6,12 @@ def message_composing(todos_arg):
     return message
         
         
-def save_to_txt(todos_arg, filepath="todos.txt"):
+def save_to_txt(todos_arg, filepath=r"todolist\todos.txt"):
     """Saving list to txt line by line"""
     with open(filepath, "w") as file:
         file.writelines(todos_arg)
+        
+        
+if __name__ == "main":
+    print("Hello")
+    
