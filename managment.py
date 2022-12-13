@@ -1,3 +1,9 @@
+def get_todos(filepath=r"todolist\todos.txt"):
+    """Just reads your todos txt"""
+    with open(r"todolist\todos.txt", "r") as file:
+        items = file.readlines()
+    return items
+
 def message_composing(todos_arg):
     """Compose message from list separating every element by newline"""
     message = ''
