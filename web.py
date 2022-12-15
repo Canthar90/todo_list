@@ -2,6 +2,9 @@ import streamlit as st
 import managment
 
 
+if not os.path.exists(r"todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
 
 todos = managment.get_todos()
 
