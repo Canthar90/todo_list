@@ -16,10 +16,8 @@ st.title("Tasks list App")
 st.subheader("This im my todo/tasks app")
 st.write("This app is to increase your productivity.")
 
-checkboxes = []
 for index, todo in enumerate(todos):
-    # st.checkbox(todo, key=todo)
-    checkboxes.append(index)
+
     checkbox = st.checkbox(todo, key=index )
     if checkbox:
         todos.pop(index)
@@ -34,4 +32,4 @@ st.text_input(label=" ", placeholder="Input new todo....",
 
 
 
-st.session_state
+st.write("Created by Dawid Cieślak")
